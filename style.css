@@ -12,12 +12,51 @@ body {
   font-family: Inter, serif;
 }
 
-.container {
-  max-width: 0;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 0;
-  padding-left: 0;
+.sidebar-wrapper {
+  width: 305px;
+  height: 1315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 46px 0 40px;
+}
+
+.profile-image {
+  margin: 50px 81px 0 74px;
+  height: 150px;
+  width: 150px;
+  border-radius: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.profile-image__img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.social-medias {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.social-media-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background-color: #FFB400;
+  height: 24px;
+  width: 24px;
+}
+
+.line-separator {
+  height: 1.5px;
+  background-color: #F0F0F6;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
