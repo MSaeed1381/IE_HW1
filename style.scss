@@ -17,14 +17,30 @@ body {
 
 }
 
+.sidebar {
+  padding: 1rem 0 1rem 0;
+}
+
+.sidebar-container {
+  padding: 0 3rem 0 2rem;
+  margin: 0;
+}
+
 .sidebar-wrapper {
   width: 305px;
   height: 1315px;
   display: flex;
   flex-direction: column;
   //align-items: center;
-  padding: 0 46px 0 40px;
+  //padding: 0 46px 0 40px;
 }
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .profile-image {
   margin: 50px 81px 0 74px;
   height: 150px;
@@ -42,6 +58,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
 }
 .social-media-icon {
   display: flex;
@@ -58,6 +75,8 @@ body {
   height: 1.5px;
   background-color: #F0F0F6;
   width: 100%;
+  color: #F0F0F6;
+  opacity: 0.5; //TODO
 }
 
 .profile-information {
@@ -105,5 +124,56 @@ body {
 
 }
 
+.contact-information {
+  padding: 0 2rem 0 2rem;
+}
 
+.content-information-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #767676;
+}
+.contact-tools {
+
+}
+.contact-ids {
+
+}
+
+#email {
+  text-decoration: underline;
+}
+
+#available-style {
+  color: #7EB942;
+}
+
+.skill-item__icon {
+  filter: invert(68%) sepia(42%) saturate(2330%) hue-rotate(2deg) brightness(103%) contrast(110%);
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.skill-item__content{
+  display: inline-block;
+}
+
+
+.skill-item {
+  display: inline-block;
+  color: #767676;
+}
+
+.download-btn {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFB400;
+  padding: 0.5rem;
+}
+.download-btn__content {
+  font-weight: 600;
+}
+.download-btn__img{
+
+}
 
