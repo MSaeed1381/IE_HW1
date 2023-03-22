@@ -1,8 +1,17 @@
 $sidebarWidth: 20rem;
 $sidebarHeight: 86rem;
-$borderRadius: 300px;
+$borderRadius: 50%;
 $yellow: #FFB400;
 $separatorColor: #F0F0F6;
 $lightGray: #767676;
 $white: #FFFFFF;
 $backgroundColor: #E4E6EB;
+$green: #7EB942;
+
+
+$font-weights: (
+  "normal": 400,
+   "big": 500,
+   "bold": 600,
+   "vvold": 700
+);

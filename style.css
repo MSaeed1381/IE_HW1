@@ -34,12 +34,24 @@ body {
   justify-content: center;
 }
 
+.profile-image__img, .profile-image {
+  border-radius: 50%;
+}
+
 .profile-image {
-  height: 150px;
-  width: 150px;
-  border-radius: 300px;
-  object-fit: cover;
-  overflow: hidden;
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+}
+
+.active-symbol {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background-color: #7EB942;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 10%;
 }
 
 .profile-image__img {
@@ -59,7 +71,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 300px;
+  border-radius: 50%;
   background-color: #FFB400;
   height: 24px;
   width: 24px;
