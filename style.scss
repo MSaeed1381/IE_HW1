@@ -14,6 +14,7 @@ html {
 body {
   font-family: 'Inter', serif;
   background-color: $backgroundColor;
+  margin: 0;
 }
 
 .container {
@@ -29,7 +30,6 @@ body {
   padding: 1rem 0 1rem 0;
   background-color: $white;
   width: $sidebarWidth;
-  height: $sidebarHeight;
   display: flex;
   flex-direction: column;
 }
@@ -42,43 +42,44 @@ body {
 
 .profile-image__img, .profile-image {
   border-radius: $borderRadius;
+  height: 100%;
+  width: 100%;
 }
 
 .profile-image {
-  height: 10rem;
-  width: 10rem;
+  max-height: 11rem;
+  max-width: 10rem;
   position: relative;
 }
 
 .active-symbol{
   position: absolute;
-  height: 1rem;
-  width: 1rem;
+  height: 10%;
+  width: 10%;
   background-color: $green;
   border-radius: $borderRadius;
   bottom: 10%;
   right: 10%;
 }
-.profile-image__img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
+
 .social-medias {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-
 }
 .social-media-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
   border-radius: $borderRadius;
   background-color: $yellow;
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0.2rem;
 }
 
 .line-separator{
@@ -96,24 +97,23 @@ body {
   flex-wrap: wrap;
 }
 
+.profile-information-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .profile-information__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-
 }
 
 .information-key {
   padding: 0 0.3rem 0 0.25rem;
   background-color: #FFB400;
-
-}
-
-.information-value {
-}
-
-
-.languages-information{
 
 }
 
