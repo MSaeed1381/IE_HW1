@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Inter", serif;
+  font-family: Inter;
   background-color: #E4E6EB;
   margin: 0;
 }
@@ -173,22 +173,50 @@ body {
   font-weight: 600;
 }
 
+.body-content {
+  width: 73%;
+}
+
 .body-container {
   margin: 0 1.5rem;
   display: flex;
   background-color: #FFFFFF;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.resume-container {
+  width: 100%;
+  display: block;
 }
 
 .resume-container__txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem;
 }
 
 .resume-container__header {
   size: 3rem;
-  font-weight: 900;
+  font-weight: 700;
+  max-width: 22.3rem;
+  line-height: 50%;
+  margin: 0;
+}
+
+.resume-container__information {
+  text-transform: capitalize;
+  max-width: 26rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #767676;
+  margin: 0;
+}
+
+#highlighted-text {
+  display: inline-block;
+  color: #FFB400;
 }
 
 /*# sourceMappingURL=style.css.map */

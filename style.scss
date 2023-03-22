@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', serif;
+  font-family: Inter;
   background-color: $backgroundColor;
   margin: 0;
 }
@@ -190,22 +190,50 @@ body {
 
 }
 
+.body-content{
+  width: 73%;
+}
+
 .body-container{
   margin: 0 1.5rem;
   display: flex;
   background-color: $white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
+.resume-container {
+  width: 100%;
+  display: block;
+}
 
 .resume-container__txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem;
+  //padding: 3rem;
+
 }
 
 .resume-container__header{
-
   size: 3rem;
-  font-weight: 900;
+  font-weight: 700;
+  max-width: 22.3rem;
+  line-height: 50%;
+  margin: 0;
+}
+
+.resume-container__information{
+  text-transform: capitalize;
+  max-width: 26rem;
+  font-weight: weight(normal);
+  font-size: 1rem;
+  color: $lightGray;
+  margin: 0;
+}
+
+#highlighted-text {
+  display: inline-block;
+  color: $yellow;
 }
