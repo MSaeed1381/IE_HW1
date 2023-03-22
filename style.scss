@@ -1,3 +1,5 @@
+@import "variables";
+@import "mixins";
 
 html {
   box-sizing: border-box;
@@ -11,14 +13,11 @@ html {
 
 body {
   font-family: 'Inter', serif;
+  background-color: $backgroundColor;
 }
 
 .container {
 
-}
-
-.sidebar {
-  padding: 1rem 0 1rem 0;
 }
 
 .sidebar-container {
@@ -27,12 +26,12 @@ body {
 }
 
 .sidebar-wrapper {
-  width: 305px;
-  height: 1315px;
+  padding: 1rem 0 1rem 0;
+  background-color: $white;
+  width: $sidebarWidth;
+  height: $sidebarHeight;
   display: flex;
   flex-direction: column;
-  //align-items: center;
-  //padding: 0 46px 0 40px;
 }
 .profile-header {
   display: flex;
@@ -42,10 +41,9 @@ body {
 }
 
 .profile-image {
-  margin: 50px 81px 0 74px;
   height: 150px;
   width: 150px;
-  border-radius: 300px;
+  border-radius: $borderRadius;
   object-fit: cover;
   overflow: hidden;
 }
@@ -65,18 +63,18 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 20px;
-  background-color: #FFB400;
+  border-radius: $borderRadius;
+  background-color: $yellow;
   height: 24px;
   width: 24px;
 }
 
 .line-separator{
   height: 1.5px;
-  background-color: #F0F0F6;
+  background-color: $separatorColor;
   width: 100%;
   color: #F0F0F6;
-  opacity: 0.5; //TODO
+  opacity: 0.5;
 }
 
 .profile-information {
@@ -114,7 +112,7 @@ body {
 .language-information{
   display: flex;
   justify-content: space-between;
-  color: #767676;
+  color: $lightGray;
 }
 .language-information__key {
 
@@ -131,7 +129,7 @@ body {
 .content-information-wrapper {
   display: flex;
   justify-content: space-between;
-  color: #767676;
+  color: $lightGray;
 }
 .contact-tools {
 
@@ -161,14 +159,16 @@ body {
 
 .skill-item {
   display: inline-block;
-  color: #767676;
+  color: $lightGray;
 }
 
 .download-btn {
   display: flex;
   justify-content: space-evenly;
-  background-color: #FFB400;
+  background-color: $yellow;
+  opacity: 0.95;
   padding: 0.5rem;
+  cursor: pointer;
 }
 .download-btn__content {
   font-weight: 600;

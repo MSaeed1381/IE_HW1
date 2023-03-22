@@ -10,10 +10,7 @@ html {
 
 body {
   font-family: "Inter", serif;
-}
-
-.sidebar {
-  padding: 1rem 0 1rem 0;
+  background-color: #E4E6EB;
 }
 
 .sidebar-container {
@@ -22,8 +19,10 @@ body {
 }
 
 .sidebar-wrapper {
-  width: 305px;
-  height: 1315px;
+  padding: 1rem 0 1rem 0;
+  background-color: #FFFFFF;
+  width: 20rem;
+  height: 86rem;
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +35,6 @@ body {
 }
 
 .profile-image {
-  margin: 50px 81px 0 74px;
   height: 150px;
   width: 150px;
   border-radius: 300px;
@@ -61,7 +59,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 20px;
+  border-radius: 300px;
   background-color: #FFB400;
   height: 24px;
   width: 24px;
@@ -141,7 +139,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   background-color: #FFB400;
+  opacity: 0.95;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .download-btn__content {
