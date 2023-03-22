@@ -195,28 +195,46 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .resume-container__header {
-  size: 3rem;
+  font-size: 3rem;
   font-weight: 700;
-  max-width: 22.3rem;
-  line-height: 50%;
-  margin: 0;
+  max-width: 31rem;
+  line-height: 124%;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 .resume-container__information {
   text-transform: capitalize;
-  max-width: 26rem;
+  max-width: 25rem;
   font-weight: 400;
   font-size: 1rem;
   color: #767676;
-  margin: 0;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 #highlighted-text {
   display: inline-block;
   color: #FFB400;
+}
+
+.resume-btn {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #FFB400;
+  max-height: 3rem;
+  max-width: 9rem;
+  padding: 0.7rem;
+  border-radius: 5px;
+  font-weight: 500;
+  margin: 4rem 1rem 1rem 1rem;
+}
+
+.resume-container__img {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
