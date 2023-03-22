@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: Inter, serif;
+  font-family: 'Inter', serif;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
   height: 1315px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
   padding: 0 46px 0 40px;
 }
 .profile-image {
@@ -58,6 +58,52 @@ body {
   height: 1.5px;
   background-color: #F0F0F6;
   width: 100%;
+}
+
+.profile-information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profile-information__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
 }
+
+.information-key {
+  padding: 0 0.3rem 0 0.25rem;
+  background-color: #FFB400;
+
+}
+
+.information-value {
+}
+
+
+.languages-information{
+
+}
+
+.language-information-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.language-information{
+  display: flex;
+  justify-content: space-between;
+  color: #767676;
+}
+.language-information__key {
+
+}
+
+.language-information__value{
+
+}
+
+
 
