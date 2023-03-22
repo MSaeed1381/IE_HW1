@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-
+  display: flex;
+  flex-direction: row;
 }
 
 .sidebar-container {
@@ -189,3 +190,22 @@ body {
 
 }
 
+.body-container{
+  margin: 0 1.5rem;
+  display: flex;
+  background-color: $white;
+}
+
+
+.resume-container__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.resume-container__header{
+
+  size: 3rem;
+  font-weight: 900;
+}

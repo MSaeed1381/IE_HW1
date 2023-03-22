@@ -14,6 +14,11 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 .sidebar-container {
   padding: 0 3rem 0 2rem;
   margin: 0;
@@ -166,6 +171,24 @@ body {
 
 .download-btn__content {
   font-weight: 600;
+}
+
+.body-container {
+  margin: 0 1.5rem;
+  display: flex;
+  background-color: #FFFFFF;
+}
+
+.resume-container__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.resume-container__header {
+  size: 3rem;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=style.css.map */
