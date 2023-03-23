@@ -29,6 +29,7 @@ body {
   flex-wrap: wrap;
   text-transform: capitalize;
   text-align: center;
+  margin-top: 4rem;
 }
 
 .services-content__title {
@@ -61,7 +62,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 20rem;
+  width: 19rem;
   height: 14rem;
   margin: 1rem;
   background-color: #fff;
