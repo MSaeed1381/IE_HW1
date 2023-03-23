@@ -1,3 +1,4 @@
+@import "variables";
 
 html {
   box-sizing: border-box;
@@ -11,6 +12,7 @@ html {
 
 body {
   font-family: Inter, serif;
+  background-color: #dbd7d7;
 }
 
 .container {
@@ -21,3 +23,85 @@ body {
   padding-left: 0;
 
 }
+
+.services-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.services-content__title{
+  color: $titleBlackColor;
+  font-weight: 700; //TODO
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+.services-content__txt{
+  max-width: 29rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1rem;
+  color: $lightGrey;
+}
+
+.services-content__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 20rem;
+  height: 14rem;
+  margin: 1rem;
+  //padding: 2rem;
+  background-color: $white;
+}
+
+.service-image{
+  filter: $iconColorFilter;
+  margin-bottom: 1.5rem;
+}
+
+.service__title{
+  margin: 0.5rem;
+  color: $titleBlackColor;
+  font-weight: 500; // TODO
+  font-size: 1.1rem;
+}
+
+.service__txt {
+  margin: 0.5rem;
+  color: $lightGrey;
+  font-size: 0.9rem;
+  font-weight: 400; //TODO
+}
+
+.service__txt:nth-last-child(2){
+  max-width: 16rem;
+  line-height: 1.5rem;
+}
+
+.order-text {
+  text-transform: uppercase;
+  font-family: Roboto, "Comic Sans MS", serif;
+  color: $yellow;
+  font-weight: 700; // TODO
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}
+
