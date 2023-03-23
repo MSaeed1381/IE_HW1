@@ -178,7 +178,6 @@ body {
 }
 
 .body-container {
-  margin: 0 1.5rem;
   display: flex;
   background-color: #FFFFFF;
   justify-content: space-around;
@@ -247,6 +246,58 @@ body {
 
 .resume-btn__txt {
   margin-right: 0.7rem;
+}
+
+#shape1 {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+}
+
+#shape2 {
+  position: absolute;
+  left: 10%;
+  bottom: 7%;
+}
+
+#shape3 {
+  position: absolute;
+  left: 40%;
+  bottom: 24%;
+}
+
+#shape4 {
+  position: absolute;
+  left: 55%;
+  top: 8%;
+}
+
+#shape5 {
+  position: absolute;
+  left: 60%;
+  bottom: 13%;
+}
+
+#shape6 {
+  position: absolute;
+  right: 4%;
+  top: 22%;
+}
+
+#shape7 {
+  position: absolute;
+  right: 2.5%;
+  bottom: 3%;
+}
+
+.body-container-wrapper {
+  margin: 0 1.5rem;
+  position: relative;
+  display: block;
+}
+
+.resume-container__header, #highlighted, .resume-btn__txt, .resume-btn__img, .resume-container__information, .resume-container__img, #person-image {
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
