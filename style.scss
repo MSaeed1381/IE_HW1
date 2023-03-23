@@ -191,7 +191,7 @@ body {
 }
 
 .body-content{
-  width: 73%;
+  width: 100%;
 }
 
 .body-container{
@@ -200,11 +200,11 @@ body {
   background-color: $white;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 100%;
 }
 
 .resume-container {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -213,6 +213,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 100%;
   //padding: 3rem;
 
 }
@@ -241,17 +242,29 @@ body {
 
 .resume-btn {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: $yellow;
-  max-height: 3rem;
-  max-width: 9rem;
-  padding: 0.7rem;
+  padding: 0.8rem 1.2rem 0.8rem 0.8rem;
   border-radius: 5px;
   font-weight: weight(big);
   margin: 4rem 1rem 1rem 1rem;
+  cursor: pointer;
 }
 
 .resume-container__img {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 1rem 1rem 0 1rem;
+
 }
+
+#person-image{
+  max-width: 100%;
+}
+.resume-btn__txt{
+  margin-right: 0.7rem;
+}
+
