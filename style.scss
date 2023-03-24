@@ -15,7 +15,6 @@ html {
 body {
   font-family: Inter, serif;
   background-color: $backgroundColor;
-  margin: 0;
 }
 
 .container {
@@ -402,3 +401,119 @@ body {
   cursor: pointer;
 }
 
+.education-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.education-content-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-content-header__title{
+  color: $titleBlackColor;
+  font-weight: 700;
+}
+
+.education-content-header__description{
+  font-size: 1rem;
+  color: $lightGray;
+  max-width: 30rem;
+  text-align: center;
+  font-weight: 400;
+
+}
+
+.education-content-body {
+  background-color: $white;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.education-histories{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 8rem 1.5rem 8rem;
+  flex-wrap: wrap;
+}
+
+.education-history{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.education-history-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.education-history-info__title{
+  color: $titleBlackColor;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.education-history-info-date{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.education-history-info-date__job{
+  font-size: 1rem;
+  color: $titleBlackColor;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.education-history-info-date__date{
+  font-size: 0.6rem;
+  background-color: $yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  color: $white;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.education-history-detail{
+  margin: 1rem;
+}
+
+.education-history-detail__title{
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $titleBlackColor;
+  margin: 0;
+}
+
+.education-history-detail__info {
+  max-width: 36rem;
+  line-height: 1.5rem;
+  color: $lightGray;
+  font-size: 1rem;
+}
+
+.line-long {
+  border: 0.1rem solid #F0F0F6;
+  width: 100%;
+
+}
