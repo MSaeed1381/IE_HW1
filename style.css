@@ -62,18 +62,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  padding: 3rem 8rem 1.5rem 8rem;
+  flex-wrap: wrap;
 }
 
 .education-history {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .education-history-info {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem;
 }
 
 .education-history-info__title {
@@ -87,11 +91,13 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .education-history-info-date__job {
   font-size: 1rem;
   color: #2B2B2B;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .education-history-info-date__date {
@@ -102,7 +108,12 @@ body {
   align-items: center;
   padding: 0.25rem 0.5rem;
   color: #FFFFFF;
-  margin: 0 0 0 1.4rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.education-history-detail {
+  margin: 1rem;
 }
 
 .education-history-detail__title {
@@ -117,6 +128,11 @@ body {
   line-height: 1.5rem;
   color: #767676;
   font-size: 1rem;
+}
+
+.line-long {
+  border: 0.1rem solid #F0F0F6;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
