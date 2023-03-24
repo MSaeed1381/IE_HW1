@@ -28,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
+  margin: 2rem 2rem 0 0;
 }
 
 .education-content-header {
@@ -41,6 +42,7 @@ body {
 .education-content-header__title {
   color: #2B2B2B;
   font-weight: 700;
+  margin: 0;
 }
 
 .education-content-header__description {
@@ -53,7 +55,7 @@ body {
 
 .education-content-body {
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 2rem 0 0 0;
   padding: 1rem;
   width: 100%;
 }
