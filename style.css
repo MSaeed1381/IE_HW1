@@ -387,6 +387,7 @@ body {
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
+  margin: 3rem 2rem 0 0.2rem;
 }
 
 .education-content-header {
@@ -400,6 +401,8 @@ body {
 .education-content-header__title {
   color: #2B2B2B;
   font-weight: 700;
+  margin: 0;
+  font-size: 2rem;
 }
 
 .education-content-header__description {
@@ -412,7 +415,7 @@ body {
 
 .education-content-body {
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 2rem 0 0 0;
   padding: 1rem;
   width: 100%;
 }
@@ -421,14 +424,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 8rem 1.5rem 8rem;
+  padding: 3rem 0 1.5rem 0;
   flex-wrap: wrap;
 }
 
 .education-history {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
