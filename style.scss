@@ -6,39 +6,37 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:after,
-*:before {
+*, *::after, *::before {
   box-sizing: inherit;
 }
 
 body {
-  font-family: Inter, serif;
+  font-family: $font-family;
   background-color: $backgroundColor;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
+  @include flex(row, nowrap, start, stretch, start);
+}
+
+.sidebar {
+  width: $sidebarWidth;
 }
 
 .sidebar-container {
   padding: 0 3rem 0 2rem;
   margin: 0;
+  width: 100%;
 }
 
 .sidebar-wrapper{
   padding: 1rem 0 1rem 0;
   background-color: $white;
-  width: $sidebarWidth;
-  display: flex;
-  flex-direction: column;
+
+  @include flex(column, nowrap, start, stretch, start);
 }
 .profile-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(column, nowrap, center, center, start);
 }
 
 .profile-image__img, .profile-image {
@@ -64,18 +62,13 @@ body {
 }
 
 .social-medias {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  @include flex(row, wrap, space-between, center, start);
   width: 100%;
 }
+
+
 .social-media-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
+  @include flex(row, wrap, center, center, center);
   border-radius: $borderRadius;
   background-color: $yellow;
   height: 1.5rem;
@@ -93,46 +86,31 @@ body {
 
 .profile-information {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  @include flex(column, wrap, start, stretch, start);
 }
 
 .profile-information-wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include flex(column, wrap, space-between, stretch, start);
 }
 
 .profile-information__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  @include flex(row, wrap, space-between, center, start);
+  width: 100%;
 }
 
 .information-key {
   padding: 0 0.3rem 0 0.25rem;
   background-color: #FFB400;
-
 }
 
 .language-information-wrapper {
-  display: flex;
-  flex-direction: column;
+  @include flex(column, wrap, space-between, stretch, start);
+
 }
 .language-information{
-  display: flex;
-  justify-content: space-between;
+  @include flex(row, wrap, space-between, stretch, start);
   color: $lightGray;
-}
-.language-information__key {
-
-}
-
-.language-information__value{
-
+  width: 100%;
 }
 
 .contact-information {
@@ -140,15 +118,8 @@ body {
 }
 
 .content-information-wrapper {
-  display: flex;
-  justify-content: space-between;
+  @include flex(row, nowrap, space-between, stretch, start);
   color: $lightGray;
-}
-.contact-tools {
-
-}
-.contact-ids {
-
 }
 
 #email {
@@ -159,7 +130,9 @@ body {
   color: $green;
 }
 
-.skill-item__icon {
+
+.skill-item__content::before {
+  content: url("images/skill-icon.svg");
   filter: invert(68%) sepia(42%) saturate(2330%) hue-rotate(2deg) brightness(103%) contrast(110%);
   display: inline-block;
   margin-right: 0.7rem;
@@ -167,17 +140,12 @@ body {
 
 .skill-item__content{
   display: inline-block;
-}
-
-
-.skill-item {
-  display: inline-block;
   color: $lightGray;
 }
 
+
 .download-btn {
-  display: flex;
-  justify-content: space-evenly;
+  @include flex(row, nowrap, space-evenly, stretch, start);
   background-color: $yellow;
   opacity: 0.95;
   padding: 0.5rem;
@@ -186,9 +154,6 @@ body {
 .download-btn__content {
   font-weight: 600;
 }
-.download-btn__img{
-
-}
 
 .body-content{
   width: 100%;
@@ -196,10 +161,8 @@ body {
 }
 
 .body-container{
-  display: flex;
+  @include flex(row, wrap, space-around, stretch, start);
   background-color: $white;
-  justify-content: space-around;
-  flex-wrap: wrap;
   max-width: 100%;
 }
 
@@ -209,13 +172,8 @@ body {
 }
 
 .resume-container__txt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flex(column, nowrap, center, flex-start, start);
   max-width: 100%;
-  //padding: 3rem;
-
 }
 
 .resume-container__header{
@@ -241,9 +199,7 @@ body {
 }
 
 .resume-btn {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  @include flex(row, wrap, space-evenly, stretch, start);
   background-color: $yellow;
   padding: 0.8rem 1.2rem 0.8rem 0.8rem;
   border-radius: 5px;
@@ -253,12 +209,9 @@ body {
 }
 
 .resume-container__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(row, nowrap, center, center, start);
   max-width: 100%;
   margin: 1rem 1rem 0 1rem;
-
 }
 
 #person-image{
@@ -268,41 +221,39 @@ body {
   margin-right: 0.7rem;
 }
 
-#shape1 {
+#shape1, #shape2, #shape3, #shape4, #shape5, #shape6, #shape7 {
   position: absolute;
+}
+
+#shape1 {
   left: 3%;
   top: 3%;
 }
 
 #shape2 {
-  position: absolute;
   left: 10%;
   bottom: 7%;
 }
 
 #shape3 {
-  position: absolute;
   left: 40%;
   bottom: 24%;
 }
 #shape4 {
-  position: absolute;
   left: 55%;
   top: 8%;
 }
 
 #shape5 {
-  position: absolute;
   left: 60%;
   bottom: 13%;
 }
 #shape6 {
-  position: absolute;
   right: 4%;
   top: 22%;
 }
+
 #shape7 {
-  position: absolute;
   right: 2.5%;
   bottom: 3%;
 }
@@ -317,14 +268,8 @@ body {
   z-index: 1;
 }
 
-
-
 .services-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  @include flex(column, wrap, center, center, center);
   text-transform: capitalize;
   text-align: center;
   margin-top: 4rem;
@@ -332,7 +277,7 @@ body {
 
 .services-content__title{
   color: $titleBlackColor;
-  font-weight: 700; //TODO
+  font-weight: weight(bold);
   font-size: 2rem;
   margin: 0;
 }
@@ -347,24 +292,15 @@ body {
 }
 
 .services-content__content{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  @include flex(row, wrap, center, center, start);
   margin-top: 1rem;
 }
 
 .service {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  @include flex(column, wrap, center, center, center);
   width: 19rem;
   height: 14rem;
   margin: 0.5rem;
-  //padding: 2rem;
   background-color: $white;
 }
 
@@ -376,7 +312,7 @@ body {
 .service__title{
   margin: 0.5rem;
   color: $titleBlackColor;
-  font-weight: 500; // TODO
+  font-weight: weight(big);
   font-size: 1.1rem;
 }
 
@@ -384,7 +320,6 @@ body {
   margin: 0.5rem;
   color: $lightGray;
   font-size: 0.9rem;
-  font-weight: 400; //TODO
 }
 
 .service__txt:nth-last-child(2){
@@ -394,35 +329,27 @@ body {
 
 .order-text {
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;;
+  font-family: $font-family-roboto;
   color: $yellow;
-  font-weight: 700; // TODO
+  font-weight: weight(vbold);
   font-size: 0.75rem;
   margin-top: 1rem;
   cursor: pointer;
 }
 
 .education-content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @include flex(column, wrap, center, center, start);
   text-transform: capitalize;
   margin: 3rem 2rem 0 0.2rem;
 }
 
 .education-content-header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @include flex(column, wrap, center, center, start);
 }
 
 .education-content-header__title{
   color: $titleBlackColor;
-  font-weight: 700;
+  font-weight: weight(vbold);
   margin: 0;
   font-size: 2rem;
 }
@@ -432,8 +359,6 @@ body {
   color: $lightGray;
   max-width: 30rem;
   text-align: center;
-  font-weight: 400;
-
 }
 
 .education-content-body {
@@ -441,28 +366,19 @@ body {
   margin: 2rem 0 0 0;
   padding: 1rem;
   width: 100%;
-
 }
 
 .education-histories{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, wrap, start, center, start);
   padding: 3rem 0 1.5rem 0;
-  flex-wrap: wrap;
 }
 
 .education-history{
-  display: flex;
+  @include flex(row, wrap, space-around, stretch, start);
   width: 100%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
 }
 .education-history-info {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  @include flex(column, wrap, start, stretch, start);
   margin: 1rem;
 }
 
@@ -474,11 +390,7 @@ body {
 }
 
 .education-history-info-date{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-
+  @include flex(row, wrap, start, center, start);
 }
 
 .education-history-info-date__job{
@@ -488,15 +400,12 @@ body {
 }
 
 .education-history-info-date__date{
+  @include flex(row, wrap, center, center, start);
   font-size: 0.6rem;
   background-color: $yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0.25rem 0.5rem;
   color: $white;
   margin: 0.5rem 0.5rem 0.5rem 0;
-  flex-wrap: wrap;
 }
 
 .education-history-detail{
@@ -520,5 +429,4 @@ body {
 .line-long {
   border: 0.1rem solid #F0F0F6;
   width: 100%;
-
 }

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" type="text/css" rel="stylesheet">
+<!--    We Can Use This Library For fonts    -->
+
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
 <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
 <!--    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">-->
@@ -12,8 +14,9 @@
 <body>
     <div class="container">
         <aside class="sidebar">
-            <section class="sidebar-wrapper">
-                <div class="sidebar-container">
+            <div class="sidebar-wrapper">
+
+                <section class="sidebar-container">
                     <div class="profile-header">
                         <div class="profile-image">
                             <img src="images/Profile.jpg" alt="profile photo" class="profile-image__img">
@@ -22,96 +25,90 @@
 
                         <h4 class="sidebar__name">Rayan Adlardard</h4>
                         <p class="sidebar__job">Font-end Developer</p>
-                        <div class="social-medias">
-                            <div class="social-media-icon">
-                                <img src="images/facebok.png" alt="facebook-profile">
-                            </div>
+                        <nav class="social-medias">
+                            <a class="social-media-icon" href="#">
+                                <img src="images/facebok.png" alt="facebook profile">
+                            </a>
 
-                            <div class="social-media-icon">
-                                <img src="images/instagram.png" alt="instagram-profile">
-                            </div>
+                            <a class="social-media-icon" href="#">
+                                <img src="images/instagram.png" alt="instagram profile">
+                            </a>
 
-                            <div class="social-media-icon">
-                                <img src="images/twitter.png" alt="twitter-profile">
-                            </div>
+                            <a class="social-media-icon" href="#">
+                                <img src="images/twitter.png" alt="twitter profile">
+                            </a>
 
-                            <div class="social-media-icon">
-                                <img src="images/linkedin%20(2).png" alt="linkedin-profile">
-                            </div>
+                            <a class="social-media-icon" href="#">
+                                <img src="images/linkedin%20(2).png" alt="linkedin profile">
+                            </a>
 
-                            <div class="social-media-icon">
-                                <img src="images/youtube.png" alt="youtube-profile">
-                            </div>
+                            <a class="social-media-icon" href="#">
+                                <img src="images/youtube.png" alt="youtube profile">
+                            </a>
 
-                            <div class="social-media-icon">
-                                <img src="images/ball.png" alt="ball-profile">
-                            </div>
-                        </div>
+                            <a class="social-media-icon" href="#">
+                                <img src="images/ball.png" alt="ball profile">
+                            </a>
+                        </nav>
                     </div>
 
                     <hr class="line-separator">
-                </div>
+                </section>
 
-
-
-                <div class="profile-information">
+                <section class="profile-information">
                     <div class="sidebar-container">
-                        <dev class="profile-information-wrapper">
-                            <div class="profile-information__content">
+                        <div class="profile-information-wrapper">
+                            <section class="profile-information__content">
                                 <p class="information-key">Age:</p>
                                 <p class="information-value">24</p>
-                            </div>
+                            </section>
 
-                            <div class="profile-information__content">
+                            <section class="profile-information__content">
                                 <p class="information-key">Residence:</p>
                                 <p class="information-value">BD</p>
-                            </div>
+                            </section>
 
-                            <div class="profile-information__content">
+                            <section class="profile-information__content">
                                 <p class="information-key">Freelance:</p>
                                 <p class="information-value" id="available-style">Available</p>
-                            </div>
+                            </section>
 
-                            <div class="profile-information__content">
+                            <section class="profile-information__content">
                                 <p class="information-key">Address:</p>
                                 <p class="information-value">Dhaka,Bangladesh</p>
-                            </div>
-                        </dev>
+                            </section>
+                        </div>
                         <hr class="line-separator">
                     </div>
-                </div>
+                </section>
 
-
-
-                <div class="languages-information">
+                <section class="languages-information">
                     <div class="sidebar-container">
                         <h4>Languages</h4>
 
                         <div class="language-information-wrapper">
-                            <div class="language-information">
+                            <section class="language-information">
                                 <p class="language-information__key"> Persian </p>
                                 <p class="language-information__value"> Native </p>
-                            </div>
+                            </section>
 
-                            <div class="language-information">
+                            <section class="language-information">
                                 <p class="language-information__key"> English </p>
                                 <p class="language-information__value"> Advanced </p>
-                            </div>
+                            </section>
 
-                            <div class="language-information">
+                            <section class="language-information">
 
                                 <p class="language-information__key"> Spanish </p>
                                 <p class="language-information__value"> Basic </p>
-                            </div>
+                            </section>
                         </div>
                         <hr class="line-separator">
                     </div>
 
-                </div>
+                </section>
 
-
-
-                <div class="contact-information">
+                <section class="contact-information">
                     <h4>contact Information</h4>
                     <div class="content-information-wrapper">
                         <div class="contact-tools">
@@ -129,37 +126,22 @@
                         </div>
                     </div>
                     <hr class="line-separator">
-                </div>
+                </section>
 
-                <div class="skills-information">
+                <section class="skills-information">
                     <div class="sidebar-container">
                         <h4>Skills</h4>
                         <div class="skill-information">
-                            <div class="skill-item">
-                                <img src="images/skill-icon.svg" class="skill-item__icon" alt="skill-icon">
                                 <p class="skill-item__content">Bootstrap, Materialize</p>
-                            </div>
-
-                            <div class="skill-item">
-                                <img src="images/skill-icon.svg" class="skill-item__icon" alt="skill-icon">
                                 <p class="skill-item__content">Stylus, Sass, Less</p>
-                            </div>
-
-                            <div class="skill-item">
-                                <img src="images/skill-icon.svg" class="skill-item__icon" alt="skill-icon">
                                 <p class="skill-item__content">Gulp, Webpack, Grunt</p>
-                            </div>
-
-                            <div class="skill-item">
-                                <img src="images/skill-icon.svg" class="skill-item__icon" alt="skill-icon">
                                 <p class="skill-item__content">GIT Knowledge</p>
-                            </div>
                         </div>
                         <hr class="line-separator">
                     </div>
-                </div>
+                </section>
 
-                <div class="download-button">
+                <section class="download-button">
                     <div class="sidebar-container">
                         <div class="download-btn">
                             <div class="download-btn__content">Download cv</div>
@@ -168,8 +150,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </aside>
 
         <main class="body-content">
