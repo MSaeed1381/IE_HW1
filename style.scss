@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
-  margin: 2rem 2rem 0 0;
+  margin: 3rem 2rem 0 0.2rem;
 }
 
 .education-content-header {
@@ -48,6 +48,7 @@ body {
   color: $titleBlackColor;
   font-weight: 700;
   margin: 0;
+  font-size: 2rem;
 }
 
 .education-content-header__description{
@@ -71,14 +72,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 8rem 1.5rem 8rem;
+  padding: 3rem 0 1.5rem 0;
   flex-wrap: wrap;
 }
 
 .education-history{
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 
 }
