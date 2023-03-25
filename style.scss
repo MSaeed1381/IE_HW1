@@ -186,6 +186,7 @@ body {
   opacity: 0.95;
   padding: 0.5rem;
   cursor: pointer;
+  margin-top: 1rem;
 }
 .download-btn__content {
   font-weight: 600;
@@ -243,6 +244,10 @@ body {
   font-weight: weight(big);
   margin: 4rem 1rem 1rem 1rem;
   cursor: pointer;
+}
+
+.resume-btn:hover, .download-btn:hover{
+  opacity: 0.8;
 }
 
 .resume-container__img {
