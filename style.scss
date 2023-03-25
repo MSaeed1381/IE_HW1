@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "reset";
 
 
 html {
@@ -8,15 +9,14 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit;
-}
-
-*, *:hover{
   transition: 0.3s;
+  &:hover{
+    transition: 0.3s;
+  }
 }
-
 
 h6:hover, p:hover{
-  color: #000;
+  color: $black;
   font-weight: weight(normal);
 }
 
@@ -47,7 +47,6 @@ body {
   padding: 1rem 0 1rem 0;
   background-color: $white;
   @include flex(column, nowrap, start, stretch, start);
-
 }
 
 .sidebar-container {
@@ -474,7 +473,8 @@ body {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
+/* Media Queries For Responsive Design */
+
 @media only screen and (max-width: 1000px) {
     .container {
       flex-direction: column-reverse;
@@ -489,7 +489,6 @@ body {
     justify-content: space-around;
 
   }
-
   .skill-information {
     @include flex(column, nowrap)
   }
@@ -499,25 +498,9 @@ body {
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1250px) {
   .body-container {
     flex-direction: column-reverse;
     align-content: center;
   }
-}
-//
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1250px) {
-
 }
