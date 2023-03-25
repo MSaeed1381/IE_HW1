@@ -10,9 +10,13 @@ html {
   box-sizing: inherit;
 }
 
+* {
+}
+
 body {
   font-family: $font-family;
   background-color: $backgroundColor;
+  @include flex(row, nowrap, center, start, start);
 }
 
 .container {
@@ -429,4 +433,53 @@ body {
 .line-long {
   border: 0.1rem solid #F0F0F6;
   width: 100%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1000px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+    .sidebar {
+      width: 100%;
+    }
+
+  .sidebar-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .skill-information {
+    @include flex(column, nowrap)
+  }
+  .social-medias {
+    justify-content: center;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1250px) {
+  .body-container {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+//
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1250px) {
+
 }

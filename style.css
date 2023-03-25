@@ -9,6 +9,12 @@ html {
 body {
   font-family: Inter, serif;
   background-color: #E4E6EB;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
 }
 
 .container {
@@ -557,5 +563,41 @@ body {
   border: 0.1rem solid #F0F0F6;
   width: 100%;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .skill-information {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: stretch;
+    align-content: start;
+  }
+  .social-medias {
+    justify-content: center;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1250px) {
+  .body-container {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=style.css.map */
