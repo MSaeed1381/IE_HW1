@@ -79,9 +79,6 @@
 * [![sass][sass]][sass-url]
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -123,6 +120,8 @@ This is an example of how to list things you need to use the software and how to
 - Other Images 
 <br> <br>
   ![A Resume Website][product-screenshot3]
+  <hr>
+  
   ![A Resume Website][product-screenshot2]
 
 <!-- ROADMAP -->
@@ -157,18 +156,12 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
 ([GPL-3.0 license](LICENSE))
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -178,10 +171,6 @@ Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
 Saeed Zare - [instagram](https://www.instagram.com/m.saeed.zare) - saeed1381@gmail.com
 
 Project Link: [https://github.com/MSaeed1381/IE_HW1](https://github.com/MSaeed1381/IE_HW1)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
