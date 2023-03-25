@@ -10,7 +10,23 @@ html {
   box-sizing: inherit;
 }
 
-* {
+*, *:hover{
+  transition: 0.3s;
+}
+
+
+h6:hover, p:hover{
+  color: #000;
+  font-weight: weight(normal);
+}
+
+img:hover{
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.social-media-icon:hover{
+  background-color: $backgroundColor;
 }
 
 body {
@@ -27,21 +43,36 @@ body {
   width: $sidebarWidth;
 }
 
+.sidebar-wrapper{
+  padding: 1rem 0 1rem 0;
+  background-color: $white;
+  @include flex(column, nowrap, start, stretch, start);
+
+}
+
 .sidebar-container {
   padding: 0 3rem 0 2rem;
   margin: 0;
   width: 100%;
+  .profile-header {
+    @include flex(column, nowrap, center, center, start);
+
+    .sidebar__name{
+      font-weight: weight(big);
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.5em 0;
+    }
+
+    .sidebar__job{
+      color: $lightGray;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+  }
 }
 
-.sidebar-wrapper{
-  padding: 1rem 0 1rem 0;
-  background-color: $white;
 
-  @include flex(column, nowrap, start, stretch, start);
-}
-.profile-header {
-  @include flex(column, nowrap, center, center, start);
-}
+
 
 .profile-image__img, .profile-image {
   border-radius: $borderRadius;
@@ -86,6 +117,7 @@ body {
   width: 100%;
   color: #F0F0F6;
   opacity: 0.5;
+  margin: 1rem 0 0 0;
 }
 
 .profile-information {
@@ -173,6 +205,7 @@ body {
 .resume-container {
   max-width: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .resume-container__txt {
