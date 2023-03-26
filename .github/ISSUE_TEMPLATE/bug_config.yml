@@ -1,0 +1,20 @@
+name: Bug/Issue Report
+description: Write the bug/Issue
+title: "[Bug/Issue]: "
+labels: ["bug", "triage", "enhancement", "documentation"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug/issue report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
